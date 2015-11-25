@@ -99,13 +99,18 @@
 		E1AE54251C0619BF00BBF9DB /* ag2r */ = {
 			isa = PBXGroup;
 			children = (
+				E1AE54571C061A7800BBF9DB /* Resources */,
+				E1AE545A1C061AA000BBF9DB /* Client */,
+				E1AE545B1C061AA900BBF9DB /* Model */,
+				E1AE54591C061A9500BBF9DB /* Views */,
+				E1AE545C1C061AB200BBF9DB /* Controllers */,
+				E1AE545D1C061ABE00BBF9DB /* Helpers */,
 				E1AE54261C0619BF00BBF9DB /* AppDelegate.swift */,
 				E1AE54281C0619BF00BBF9DB /* ViewController.swift */,
 				E1AE542A1C0619BF00BBF9DB /* Main.storyboard */,
-				E1AE54301C0619BF00BBF9DB /* Assets.xcassets */,
 				E1AE54321C0619BF00BBF9DB /* LaunchScreen.storyboard */,
-				E1AE54351C0619BF00BBF9DB /* Info.plist */,
-				E1AE542D1C0619BF00BBF9DB /* ag2r.xcdatamodeld */,
+				E1AE54301C0619BF00BBF9DB /* Assets.xcassets */,
+				E1AE545E1C061B1800BBF9DB /* Supporting Files */,
 			);
 			path = ag2r;
 			sourceTree = "<group>";
@@ -126,6 +131,65 @@
 				E1AE544B1C0619BF00BBF9DB /* Info.plist */,
 			);
 			path = ag2rUITests;
+			sourceTree = "<group>";
+		};
+		E1AE54571C061A7800BBF9DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1AE54581C061A8600BBF9DB /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E1AE54581C061A8600BBF9DB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E1AE54591C061A9500BBF9DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E1AE545A1C061AA000BBF9DB /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		E1AE545B1C061AA900BBF9DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1AE542D1C0619BF00BBF9DB /* ag2r.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E1AE545C1C061AB200BBF9DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E1AE545D1C061ABE00BBF9DB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E1AE545E1C061B1800BBF9DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1AE54351C0619BF00BBF9DB /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grouphn.ag2r;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -416,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grouphn.ag2r;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
