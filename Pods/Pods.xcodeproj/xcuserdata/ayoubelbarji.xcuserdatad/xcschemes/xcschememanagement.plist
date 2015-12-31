@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Calendar-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -20,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>Overcoat.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PageMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,6 +52,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>21C461B0CAD90DE64B07A5D212C5F829</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24090FBCEF7A50AE384678B5C071804B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>360DDE334700FEA7F68FFF42F46F6CDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>37DD57F1868A01ED3D2A61F662514570</key>
 		<dict>
 			<key>primary</key>
@@ -52,12 +82,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C16BDB2BEB20F2F091045D15C0BFA50E</key>
+		<key>90E0B4DAED709BE4BEA9D591E8BC88F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD7147D77B966917D2676E5EC65D2393</key>
+		<key>C16BDB2BEB20F2F091045D15C0BFA50E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

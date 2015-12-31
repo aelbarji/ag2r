@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1AE54221C0619BF00BBF9DB"
-               BuildableName = "ag2r.app"
+               BuildableName = "Ag2r.app"
                BlueprintName = "ag2r"
                ReferencedContainer = "container:ag2r.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1AE54221C0619BF00BBF9DB"
-            BuildableName = "ag2r.app"
+            BuildableName = "Ag2r.app"
             BlueprintName = "ag2r"
             ReferencedContainer = "container:ag2r.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1AE54221C0619BF00BBF9DB"
-            BuildableName = "ag2r.app"
+            BuildableName = "Ag2r.app"
             BlueprintName = "ag2r"
             ReferencedContainer = "container:ag2r.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1AE54221C0619BF00BBF9DB"
-            BuildableName = "ag2r.app"
+            BuildableName = "Ag2r.app"
             BlueprintName = "ag2r"
             ReferencedContainer = "container:ag2r.xcodeproj">
          </BuildableReference>

@@ -1,0 +1,45 @@
+
+/* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "0hh-dB-NZG"; */
+"0hh-dB-NZG.title" = "Item 1";
+
+/* Class = "UINavigationItem"; title = "MENU"; ObjectID = "32O-sf-I0e"; */
+"32O-sf-I0e.title" = "MENU";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "7lJ-Ac-l58"; */
+"7lJ-Ac-l58.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9Nm-IT-UnM"; */
+"9Nm-IT-UnM.text" = "Label";
+
+/* Class = "UILabel"; text = "optionTwo"; ObjectID = "Dv0-Pq-hf1"; */
+"Dv0-Pq-hf1.text" = "optionTwo";
+
+/* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "GqB-j3-Uxj"; */
+"GqB-j3-Uxj.title" = "Item 1";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "JRc-H8-xDV"; */
+"JRc-H8-xDV.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "VJn-MV-FZ3"; */
+"VJn-MV-FZ3.title" = "Item 2";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "ZQs-bG-PW6"; */
+"ZQs-bG-PW6.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "bvE-lc-pYg"; */
+"bvE-lc-pYg.title" = "Item 2";
+
+/* Class = "UILabel"; text = "TITLE"; ObjectID = "f94-Dj-ERE"; */
+"f94-Dj-ERE.text" = "TITLE";
+
+/* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "oTF-Yf-wXl"; */
+"oTF-Yf-wXl.title" = "Item 1";
+
+/* Class = "UILabel"; text = "optionOne"; ObjectID = "qlk-SM-c9g"; */
+"qlk-SM-c9g.text" = "optionOne";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "sKr-MI-tX8"; */
+"sKr-MI-tX8.title" = "Item 2";
+
+/* Class = "UILabel"; text = "Tous"; ObjectID = "vYf-Sl-P2j"; */
+"vYf-Sl-P2j.text" = "Tous";

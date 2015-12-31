@@ -10,9 +10,14 @@ PODS:
   - AFNetworking/Reachability (2.6.3)
   - AFNetworking/Security (2.6.3)
   - AFNetworking/Serialization (2.6.3)
-  - Mantle (2.0.5):
-    - Mantle/extobjc (= 2.0.5)
-  - Mantle/extobjc (2.0.5)
+  - Calendar-iOS (0.9)
+  - Charts (2.1.6)
+  - Crashlytics (3.4.1):
+    - Fabric (~> 1.6.0)
+  - Fabric (1.6.1)
+  - Mantle (2.0.6):
+    - Mantle/extobjc (= 2.0.6)
+  - Mantle/extobjc (2.0.6)
   - MBProgressHUD (0.9.1)
   - Overcoat (3.2.1):
     - Overcoat/NSURLConnection (= 3.2.1)
@@ -36,18 +41,29 @@ PODS:
   - Overcoat/PromiseKit/NSURLSession (3.2.1):
     - Overcoat/NSURLSession
     - PromiseKit/CorePromise (> 2)
+  - PageMenu (1.2.8)
   - PromiseKit/CorePromise (3.0.0)
 
 DEPENDENCIES:
+  - Calendar-iOS
+  - Charts
+  - Crashlytics
+  - Fabric
   - MBProgressHUD (~> 0.9.1)
   - Overcoat (~> 3.0)
   - Overcoat/PromiseKit (~> 3.0)
+  - PageMenu
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
+  Calendar-iOS: 2296d7b4354a36ee1eefa012617b573270a206cb
+  Charts: 5e1e5ac23898e5b09d226a2fc3e9d86bc281937e
+  Crashlytics: 41574a245bc6ae10c55d57f385ebd2004e5bee05
+  Fabric: bf0ceb04e7c924090efc5f8c55e4fbcca189e0a0
+  Mantle: 299966b00759634931699f69cb6a30b9239b944d
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   Overcoat: ce2bd0bfee6e300839cb244799c9e1e1aa70c06a
+  PageMenu: 703e82e173f54a4626ab88fcdca7703ee52e0cbe
   PromiseKit: 665540a1eb43156446872dcf49ed7dee6ebbe13b
 
 COCOAPODS: 0.39.0

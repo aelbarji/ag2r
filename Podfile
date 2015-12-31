@@ -9,6 +9,13 @@ pod 'Overcoat/PromiseKit', '~>3.0'
 use_frameworks!
 pod 'Overcoat', '~>3.0'
 pod 'MBProgressHUD', '~> 0.9.1'
+pod 'Calendar-iOS'
+pod 'PageMenu'
+pod 'Charts'
+use_frameworks!
+
+pod 'Fabric'
+pod 'Crashlytics'
 
 end
 

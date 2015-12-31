@@ -85,15 +85,21 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ag2r/AFNetworking.framework"
+  install_framework "Pods-ag2r/Calendar_iOS.framework"
+  install_framework "Pods-ag2r/Charts.framework"
   install_framework "Pods-ag2r/MBProgressHUD.framework"
   install_framework "Pods-ag2r/Mantle.framework"
   install_framework "Pods-ag2r/Overcoat.framework"
+  install_framework "Pods-ag2r/PageMenu.framework"
   install_framework "Pods-ag2r/PromiseKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ag2r/AFNetworking.framework"
+  install_framework "Pods-ag2r/Calendar_iOS.framework"
+  install_framework "Pods-ag2r/Charts.framework"
   install_framework "Pods-ag2r/MBProgressHUD.framework"
   install_framework "Pods-ag2r/Mantle.framework"
   install_framework "Pods-ag2r/Overcoat.framework"
+  install_framework "Pods-ag2r/PageMenu.framework"
   install_framework "Pods-ag2r/PromiseKit.framework"
 fi
