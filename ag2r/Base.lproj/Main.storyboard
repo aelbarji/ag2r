@@ -268,28 +268,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tableau_tech.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCt-MQ-bfI">
-                                <rect key="frame" x="20" y="0.0" width="560" height="320"/>
-                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="esf-wZ-7NK">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="4Mo-Nt-3va" customClass="CustomCollectionViewLayout" customModule="Ag2r" customModuleProvider="target"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xLZ-P9-d7v" id="mX7-pb-2hD"/>
+                                    <outlet property="delegate" destination="xLZ-P9-d7v" id="Ny6-aR-hyG"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="zCt-MQ-bfI" firstAttribute="top" secondItem="Nuh-ne-bSz" secondAttribute="topMargin" id="K6T-UB-9Uq"/>
-                            <constraint firstItem="zCt-MQ-bfI" firstAttribute="leading" secondItem="Nuh-ne-bSz" secondAttribute="leadingMargin" id="N3G-RC-BIb"/>
-                            <constraint firstItem="zCt-MQ-bfI" firstAttribute="centerY" secondItem="Nuh-ne-bSz" secondAttribute="centerY" id="Zzj-PF-rBn"/>
-                            <constraint firstItem="Drn-HQ-vei" firstAttribute="top" secondItem="zCt-MQ-bfI" secondAttribute="bottom" constant="280" id="iaE-Y4-psa"/>
-                            <constraint firstItem="zCt-MQ-bfI" firstAttribute="centerX" secondItem="Nuh-ne-bSz" secondAttribute="centerX" id="nad-eo-7qa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zCt-MQ-bfI" secondAttribute="trailing" id="rTy-qo-EU6"/>
+                            <constraint firstItem="esf-wZ-7NK" firstAttribute="top" secondItem="Nuh-ne-bSz" secondAttribute="topMargin" id="0ym-dF-JI2"/>
+                            <constraint firstItem="esf-wZ-7NK" firstAttribute="centerX" secondItem="Nuh-ne-bSz" secondAttribute="centerX" id="BB4-2w-5vQ"/>
+                            <constraint firstItem="esf-wZ-7NK" firstAttribute="trailing" secondItem="Nuh-ne-bSz" secondAttribute="trailingMargin" id="ekV-V3-2h0"/>
+                            <constraint firstItem="esf-wZ-7NK" firstAttribute="leading" secondItem="Nuh-ne-bSz" secondAttribute="leadingMargin" id="s2h-vF-xuT"/>
+                            <constraint firstItem="Drn-HQ-vei" firstAttribute="top" secondItem="esf-wZ-7NK" secondAttribute="bottom" id="y3C-7x-Xrx"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Zzj-PF-rBn"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="esf-wZ-7NK" id="Ysv-Xk-MAc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HKP-ET-JtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3844" y="65"/>
+            <point key="canvasLocation" x="3931" y="55"/>
         </scene>
         <!--Tous-->
         <scene sceneID="FgG-oQ-13O">
@@ -981,7 +985,6 @@
         <image name="Tableau_app.png" width="727" height="268"/>
         <image name="Tableau_mails .png" width="715" height="381"/>
         <image name="Tableau_obs.png" width="715" height="381"/>
-        <image name="Tableau_tech.png" width="731" height="298"/>
         <image name="Tableau_tous.png" width="715" height="381"/>
         <image name="changements_logo_selected.png" width="26" height="29"/>
         <image name="graphe_details_mails.png" width="712" height="240"/>
@@ -990,6 +993,6 @@
         <image name="screen center_etats.png" width="712" height="614"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KHv-yj-Tqs"/>
+        <segue reference="5e5-Ci-0gZ"/>
     </inferredMetricsTieBreakers>
 </document>

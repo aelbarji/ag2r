@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import Calendar_iOS
 
 class DetailViewController: UIViewController, ChartViewDelegate {
     
@@ -33,7 +34,7 @@ class DetailViewController: UIViewController, ChartViewDelegate {
 //        self.performSegueWithIdentifier(self.selectedSegue!, sender: nil)
        
         
-        // CALENDAR
+        //MARK: - CALENDAR
         let calendarView : CalendarView = CalendarView.init(position: 10.0, y: 40.0)
         calendarView.shouldShowHeaders = true
         calendarView.refresh()

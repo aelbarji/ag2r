@@ -1,69 +1,44 @@
 PODS:
-  - AFNetworking/NSURLConnection (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
+  - Alamofire (3.1.4)
+  - AlamofireObjectMapper (2.1.0):
+    - Alamofire (~> 3.1.0)
+    - ObjectMapper (~> 1.0)
   - Calendar-iOS (0.9)
   - Charts (2.1.6)
-  - Crashlytics (3.4.1):
+  - Crashlytics (3.5.0):
     - Fabric (~> 1.6.0)
-  - Fabric (1.6.1)
-  - Mantle (2.0.6):
-    - Mantle/extobjc (= 2.0.6)
-  - Mantle/extobjc (2.0.6)
-  - MBProgressHUD (0.9.1)
-  - Overcoat (3.2.1):
-    - Overcoat/NSURLConnection (= 3.2.1)
-    - Overcoat/NSURLSession (= 3.2.1)
-  - Overcoat/Core (3.2.1):
-    - AFNetworking/Serialization
-    - Mantle
-  - Overcoat/NSURLConnection (3.2.1):
-    - AFNetworking/NSURLConnection
-    - Overcoat/Core
-  - Overcoat/NSURLSession (3.2.1):
-    - AFNetworking/NSURLSession
-    - Overcoat/Core
-  - Overcoat/PromiseKit (3.2.1):
-    - Overcoat/PromiseKit/NSURLConnection (= 3.2.1)
-    - Overcoat/PromiseKit/NSURLSession (= 3.2.1)
-    - PromiseKit/CorePromise (> 2)
-  - Overcoat/PromiseKit/NSURLConnection (3.2.1):
-    - Overcoat/NSURLConnection
-    - PromiseKit/CorePromise (> 2)
-  - Overcoat/PromiseKit/NSURLSession (3.2.1):
-    - Overcoat/NSURLSession
-    - PromiseKit/CorePromise (> 2)
+  - Fabric (1.6.2)
+  - ObjectMapper (1.1.1)
   - PageMenu (1.2.8)
-  - PromiseKit/CorePromise (3.0.0)
+  - PKHUD (2.2.5)
+  - Realm (0.97.0):
+    - Realm/Headers (= 0.97.0)
+  - Realm/Headers (0.97.0)
+  - RealmSwift (0.97.0):
+    - Realm (= 0.97.0)
 
 DEPENDENCIES:
+  - AlamofireObjectMapper
   - Calendar-iOS
   - Charts
   - Crashlytics
   - Fabric
-  - MBProgressHUD (~> 0.9.1)
-  - Overcoat (~> 3.0)
-  - Overcoat/PromiseKit (~> 3.0)
+  - ObjectMapper
   - PageMenu
+  - PKHUD
+  - RealmSwift
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
+  AlamofireObjectMapper: 24097576202064f8b0a583452dd934064f78dc0e
   Calendar-iOS: 2296d7b4354a36ee1eefa012617b573270a206cb
   Charts: 5e1e5ac23898e5b09d226a2fc3e9d86bc281937e
-  Crashlytics: 41574a245bc6ae10c55d57f385ebd2004e5bee05
-  Fabric: bf0ceb04e7c924090efc5f8c55e4fbcca189e0a0
-  Mantle: 299966b00759634931699f69cb6a30b9239b944d
-  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
-  Overcoat: ce2bd0bfee6e300839cb244799c9e1e1aa70c06a
+  Crashlytics: fabfd45d0e8b8dc936c682b97e302b9a49a1c827
+  Fabric: e8296d4a1abb3c5eed770cc86b311c862f51d340
+  ObjectMapper: 4143abed1dbd49b73d75092fe8fa1c88ed6434b7
   PageMenu: 703e82e173f54a4626ab88fcdca7703ee52e0cbe
-  PromiseKit: 665540a1eb43156446872dcf49ed7dee6ebbe13b
+  PKHUD: 15d9db01fb008bb9247c6d785c585f587955b113
+  Realm: b498a6fb9d288b171ff98d0e2d4384c295be8990
+  RealmSwift: d014810dec75c9a3f1a33926d2dabfed855c582c
 
 COCOAPODS: 0.39.0

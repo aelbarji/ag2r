@@ -1,1 +1,0 @@
-../../../Overcoat/sources/PromiseKit/OVCHTTPRequestOperationManager+PromiseKit.h

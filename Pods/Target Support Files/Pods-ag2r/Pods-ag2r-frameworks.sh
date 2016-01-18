@@ -84,22 +84,24 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-ag2r/AFNetworking.framework"
+  install_framework "Pods-ag2r/Alamofire.framework"
+  install_framework "Pods-ag2r/AlamofireObjectMapper.framework"
   install_framework "Pods-ag2r/Calendar_iOS.framework"
   install_framework "Pods-ag2r/Charts.framework"
-  install_framework "Pods-ag2r/MBProgressHUD.framework"
-  install_framework "Pods-ag2r/Mantle.framework"
-  install_framework "Pods-ag2r/Overcoat.framework"
+  install_framework "Pods-ag2r/ObjectMapper.framework"
+  install_framework "Pods-ag2r/PKHUD.framework"
   install_framework "Pods-ag2r/PageMenu.framework"
-  install_framework "Pods-ag2r/PromiseKit.framework"
+  install_framework "Pods-ag2r/Realm.framework"
+  install_framework "Pods-ag2r/RealmSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-ag2r/AFNetworking.framework"
+  install_framework "Pods-ag2r/Alamofire.framework"
+  install_framework "Pods-ag2r/AlamofireObjectMapper.framework"
   install_framework "Pods-ag2r/Calendar_iOS.framework"
   install_framework "Pods-ag2r/Charts.framework"
-  install_framework "Pods-ag2r/MBProgressHUD.framework"
-  install_framework "Pods-ag2r/Mantle.framework"
-  install_framework "Pods-ag2r/Overcoat.framework"
+  install_framework "Pods-ag2r/ObjectMapper.framework"
+  install_framework "Pods-ag2r/PKHUD.framework"
   install_framework "Pods-ag2r/PageMenu.framework"
-  install_framework "Pods-ag2r/PromiseKit.framework"
+  install_framework "Pods-ag2r/Realm.framework"
+  install_framework "Pods-ag2r/RealmSwift.framework"
 fi

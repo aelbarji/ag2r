@@ -1,1 +1,0 @@
-../../../Overcoat/sources/PromiseKit/OVCHTTPSessionManager+PromiseKit.h

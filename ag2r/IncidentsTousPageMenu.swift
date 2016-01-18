@@ -28,7 +28,13 @@ class IncidentsTousPageMenu: UIViewController, ChartViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        // Commit frames' updates
+   //     self.leftChartView.commitCalendarViewUpdate()
+    //    self.rightChartView.commitMenuViewUpdate()
+    }
     /*
     // MARK: - Navigation
     

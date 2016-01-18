@@ -1,21 +1,19 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
-# use_frameworks!
+
 
 target 'ag2r' do
-
-pod 'Overcoat/PromiseKit', '~>3.0'
 use_frameworks!
-pod 'Overcoat', '~>3.0'
-pod 'MBProgressHUD', '~> 0.9.1'
+pod "PKHUD"
 pod 'Calendar-iOS'
 pod 'PageMenu'
 pod 'Charts'
-use_frameworks!
-
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'ObjectMapper'
+pod 'AlamofireObjectMapper'
+pod 'RealmSwift'
 
 end
 

@@ -15,6 +15,12 @@ class MasterTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // API CALLS
+        Ag2rClient.getChangements()
+        Ag2rClient.getDemandes()
+        Ag2rClient.getIncidents()
+        
         //FABRIC- Answers
         let button = UIButton(type: UIButtonType.RoundedRect)
         button.setTitle("Trigger Key Metric", forState: UIControlState.Normal)
@@ -62,7 +68,7 @@ class MasterTableViewController: UITableViewController {
         let cell : MenuTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! MenuTableViewCell
         
         switch indexPath.row {
-        case 0:
+        case 0: 
             let image : UIImage = UIImage(named:"changements_logo_selected")!
             cell.menuLogo.image = image
             break

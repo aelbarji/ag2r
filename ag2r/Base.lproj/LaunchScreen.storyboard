@@ -27,15 +27,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="njx-FB-6at">
-                                <rect key="frame" x="282" y="494" width="37" height="37"/>
-                                <color key="color" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="njx-FB-6at" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="188-Xt-vam"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="njx-FB-6at" secondAttribute="bottom" constant="69" id="CMB-WV-2rp"/>
                             <constraint firstItem="sLc-fP-2el" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IZW-0T-CQn"/>
                             <constraint firstItem="sLc-fP-2el" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hcA-aI-pqQ"/>
                             <constraint firstItem="APe-hT-1aF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rqk-RP-e6B"/>
