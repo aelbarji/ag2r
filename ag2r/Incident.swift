@@ -13,16 +13,13 @@ import RealmSwift
 class Incident: Object {
 
     dynamic var idRequete = ""
-    dynamic var idDemande = ""
-    dynamic var typeDemande = ""
     dynamic var etat = ""
     dynamic var priorite = ""
+    dynamic var urgence = ""
+    dynamic var impact = ""
     dynamic var resume = ""
-    dynamic var groupeAttribution = ""
+    dynamic var dateCreation = NSDate()
     dynamic var dateModification = NSDate()
-    dynamic var intervenant = ""
-    dynamic var typeAssociation = ""
-    dynamic var vip = ""
     dynamic var nbRelance = ""
     
     override static func primaryKey() -> String? {
@@ -43,16 +40,13 @@ extension Incident : Mappable {
     // Mappable
     func mapping(map: Map) {
         idRequete    <- map["id_requete"]
-        idDemande     <- map["id_demande"]
-        typeDemande     <- map ["type_demande"]
         etat         <- map["etat"]
         priorite   <- map["priorite"]
+        urgence         <- map["urgence"]
+        impact   <- map["impact"]
         resume      <- map["resume"]
-        groupeAttribution       <- map["groupe_attribution"]
+        dateCreation       <- (map["date_creation"], IncidentDateTransform())
         dateModification  <- (map["date_modification"], IncidentDateTransform())
-        intervenant     <- map["intervenant"]
-        typeAssociation    <- map["type_association"]
-        vip     <- map["vip"]
         nbRelance   <- map["nb_relance"]
     }
 }
@@ -63,8 +57,7 @@ class IncidentDateTransform : DateTransform {
         if let dateStr = value as? String {
             return NSDate.dateWithString(
                 dateStr,
-                format: "dd/MM/yy HH:mm:ss" ,
-                locale : NSLocale(localeIdentifier: "en_US"))
+                format: "yyyy-MM-dd HH:mm:ss")
         }
         return nil
     }

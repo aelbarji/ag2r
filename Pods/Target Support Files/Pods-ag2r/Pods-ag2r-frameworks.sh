@@ -93,6 +93,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ag2r/PageMenu.framework"
   install_framework "Pods-ag2r/Realm.framework"
   install_framework "Pods-ag2r/RealmSwift.framework"
+  install_framework "Pods-ag2r/Spring.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ag2r/Alamofire.framework"
@@ -104,4 +105,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ag2r/PageMenu.framework"
   install_framework "Pods-ag2r/Realm.framework"
   install_framework "Pods-ag2r/RealmSwift.framework"
+  install_framework "Pods-ag2r/Spring.framework"
 fi

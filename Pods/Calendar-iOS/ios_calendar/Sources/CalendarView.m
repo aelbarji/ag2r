@@ -18,7 +18,7 @@ static const CGFloat kCalendarViewDayCellOffset      = 3;
 
 static const CGFloat kCalendarViewMonthCellWidth     = 75;
 static const CGFloat kCalendarViewMonthCellHeight    = 25;
-static const CGFloat kCalendarViewMonthTitleOffsetY  = 45;
+static const CGFloat kCalendarViewMonthTitleOffsetY  = 55;
 static const CGFloat kCalendarViewMonthYStep         = 50;
 static const NSInteger kCalendarViewMonthInLine      = 3;
 
@@ -30,7 +30,7 @@ static const NSInteger kCalendarViewYearsAround      = 12;
 static const NSInteger kCalendarViewYearsInLine      = 5;
 
 static const CGFloat kCalendarViewMonthLabelWidth    = 95;
-static const CGFloat kCalendarViewMonthLabelHeight   = 15;
+static const CGFloat kCalendarViewMonthLabelHeight   = 25;
 
 static const CGFloat kCalendarViewYearLabelWidth     = 35;
 static const CGFloat kCalendarViewYearLabelHeight    = 15;
@@ -198,8 +198,8 @@ static const NSTimeInterval kCalendarViewSwipeMonthFadeOutTime = 0.6;
     [self setMode:CalendarModeDefault];
     
     NSDate *now = [NSDate date];
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:now];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:now];
     
     currentDay = [components day];
     currentMonth = [components month];
@@ -277,8 +277,8 @@ static const NSTimeInterval kCalendarViewSwipeMonthFadeOutTime = 0.6;
 - (void)setCurrentDate:(NSDate *)date
 {
     if (date) {
-        NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:date];
+        NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:date];
         currentDay = [components day];
         currentMonth = [components month];
         currentYear = [components year];
@@ -303,9 +303,9 @@ static const NSTimeInterval kCalendarViewSwipeMonthFadeOutTime = 0.6;
 - (NSDate *)currentDate
 {
     NSTimeZone *timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
-	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 	[calendar setTimeZone:timeZone];
-	NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:[NSDate date]];
+	NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:[NSDate date]];
 	[components setYear:currentYear];
 	[components setMonth:currentMonth];
 	[components setDay:currentDay];
@@ -324,8 +324,8 @@ static const NSTimeInterval kCalendarViewSwipeMonthFadeOutTime = 0.6;
 	[dayRects removeAllObjects];
 	
 	NSDate *now = [NSDate date];
-	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-	NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:now];
+	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+	NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:now];
 	[components setYear:currentYear];
 	[components setMonth:currentMonth];
 	[components setDay:1];  // set first day of month
@@ -472,22 +472,22 @@ static const NSTimeInterval kCalendarViewSwipeMonthFadeOutTime = 0.6;
 	NSDictionary *attributesBlack = [self generateAttributes:self.fontName
 												withFontSize:self.dayFontSize
 												   withColor:self.fontColor
-											   withAlignment:NSTextAlignmentFromCTTextAlignment(kCTCenterTextAlignment)];
+											   withAlignment:NSTextAlignmentFromCTTextAlignment(kCTTextAlignmentCenter)];
 	
 	NSDictionary *attributesWhite = [self generateAttributes:self.fontName
 												withFontSize:self.dayFontSize
 												   withColor:self.fontSelectedColor
-											   withAlignment:NSTextAlignmentFromCTTextAlignment(kCTCenterTextAlignment)];
+											   withAlignment:NSTextAlignmentFromCTTextAlignment(kCTTextAlignmentCenter)];
     
 	NSDictionary *attributesRedRight = [self generateAttributes:self.fontName
 												   withFontSize:self.headerFontSize
 													  withColor:self.fontHeaderColor
-												  withAlignment:NSTextAlignmentFromCTTextAlignment(kCTRightTextAlignment)];
+												  withAlignment:NSTextAlignmentFromCTTextAlignment(kCTTextAlignmentRight)];
 	
 	NSDictionary *attributesRedLeft = [self generateAttributes:self.fontName
 												  withFontSize:self.headerFontSize
 													 withColor:self.fontHeaderColor
-												 withAlignment:NSTextAlignmentFromCTTextAlignment(kCTLeftTextAlignment)];
+												 withAlignment:NSTextAlignmentFromCTTextAlignment(kCTTextAlignmentLeft)];
     
 	CTFontRef cellFont = CTFontCreateWithName((CFStringRef)self.fontName, self.dayFontSize, NULL);
 	CGRect cellFontBoundingBox = CTFontGetBoundingBox(cellFont);
@@ -608,7 +608,7 @@ static const NSTimeInterval kCalendarViewSwipeMonthFadeOutTime = 0.6;
 	NSDictionary *attrs = [self generateAttributes:self.fontName
 									  withFontSize:self.dayFontSize
 										 withColor:self.fontColor
-									 withAlignment:NSTextAlignmentFromCTTextAlignment(kCTCenterTextAlignment)];
+									 withAlignment:NSTextAlignmentFromCTTextAlignment(kCTTextAlignmentCenter)];
 	
 	CGFloat x = 0;
 	CGFloat y = [self getEffectiveWeekDaysYOffset];

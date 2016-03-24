@@ -16,6 +16,7 @@ class Ag2rClient {
     //MARK: - LifeCycle
     class func getChangements(){
         //
+        
         PKHUD.sharedHUD.contentView = PKHUDProgressView()
         PKHUD.sharedHUD.show()
         Alamofire.request(.GET, GlobalConstants.Api.Ag2rMock_Url_Changements).responseArray { (response: Response<[Changement], NSError>) in
@@ -34,7 +35,8 @@ class Ag2rClient {
             }
             
         }
-    }
+
+        }
     
     class func getIncidents(){
         

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,23 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logoAG2R.png" translatesAutoresizingMaskIntoConstraints="NO" id="sLc-fP-2el">
-                                <rect key="frame" x="156" y="155" width="288" height="288"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-AG2R-La-Mondiale.png" translatesAutoresizingMaskIntoConstraints="NO" id="sLc-fP-2el">
+                                <rect key="frame" x="34" y="210" width="493" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="493" id="3c9-Y6-6R1"/>
+                                    <constraint firstAttribute="height" constant="180" id="TBV-7O-mEC"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AG2R LA MONDIALE" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APe-hT-1aF">
-                                <rect key="frame" x="215.5" y="436" width="169.5" height="20.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sLc-fP-2el" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IZW-0T-CQn"/>
-                            <constraint firstItem="sLc-fP-2el" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hcA-aI-pqQ"/>
-                            <constraint firstItem="APe-hT-1aF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rqk-RP-e6B"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="APe-hT-1aF" secondAttribute="bottom" constant="143.5" id="tDW-DV-xbz"/>
+                            <constraint firstItem="sLc-fP-2el" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1BT-Fn-MI8"/>
+                            <constraint firstItem="sLc-fP-2el" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-19.5" id="Fna-EM-efY"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -43,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logoAG2R.png" width="288" height="288"/>
+        <image name="Logo-AG2R-La-Mondiale.png" width="978" height="372"/>
     </resources>
 </document>

@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  ag2r
+
+  Created by Ayoub El barji on 04/03/2016.
+  Copyright © 2016 Groupehn. All rights reserved.
+*/
+
+//DEMANDES
+"Ok" = "Clos";
+
+//CGANGEMENTS
+//ETATS
+"WorkInProgress" = "En cours";
+"Scheduled" = "Planifié";
+"Closed" = "Clos";
+"New" = "Nouveau";
+"Resolved" = "Résolu";
+"Pending" = "En attente";
+"Assigned" = "Affecté";
+//PRIORITES
+"High" = "Importante";
+"Medium" = "Moyenne";
+"Low" = "Faible";
+"Urgent" = "Critique";

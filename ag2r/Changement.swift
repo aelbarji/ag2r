@@ -54,8 +54,7 @@ class ChangementDateTransform : DateTransform {
         if let dateStr = value as? String {
             return NSDate.dateWithString(
                 dateStr,
-                format: "dd/MM/yy" ,
-                locale : NSLocale(localeIdentifier: "en_US"))
+                format: "yyyy-MM-dd HH:mm:ss")
         }
         return nil
     }
